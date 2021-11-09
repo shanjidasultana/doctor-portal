@@ -22,7 +22,7 @@ const MakeAdmin = () => {
         e.preventDefault();
         const user={email}
             if(user.email){
-                fetch('http://localhost:9000/users/admin',{
+                fetch('https://fierce-fortress-81249.herokuapp.com/users/admin',{
                 method:'PUT',
                 headers:{
                     'authorization':`Bearer ${token}`,

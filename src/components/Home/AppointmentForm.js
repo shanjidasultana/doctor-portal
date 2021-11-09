@@ -27,7 +27,7 @@ const AppointmentForm = ({open,handleCloseModal,time,date,name}) => {
       date:date.toLocaleDateString(),
       serviceName:name
     }
-    fetch('http://localhost:9000/appointments', {
+    fetch('https://fierce-fortress-81249.herokuapp.com/appointments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

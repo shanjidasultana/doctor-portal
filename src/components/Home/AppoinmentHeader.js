@@ -15,32 +15,38 @@ const AppoinmentHeader = ({value,setValue}) => {
         {   id:"1",
             name:"Teeth Orthodontics",
             time:"8:00 AM-9:00 AM",
-            space:"8"
+            space:8,
+            price:23,
         },
         {   id:"2",
             name:"Cosmetic Dentistry",
             time:"10:00 AM-11:30 AM",
-            space:"3"
+            space:3,
+            price:50,
         },
         {   id:"3",
             name:"Teeth Cleaning",
             time:"8:00 AM-9:00 AM",
-            space:"7"
+            space:7,
+            price:42,
         },
         {   id:"4",
             name:"Cavity Protection",
             time:"5:00 PM-6:30 PM",
-            space:"14"
+            space:4,
+            price:25
         },
         {   id:"5",
             name:"Teeth Orthodontics",
             time:"7:00 AM-8:30 AM",
-            space:"5"
+            space:5,
+            price:65
         },
         {   id:"6",
             name:"Teeth Skeling",
             time:"8:00 PM-9:00 PM",
-            space:"12"
+            space:2,
+            price:20,
         },
     ]
     return (

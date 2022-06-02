@@ -10,7 +10,6 @@ const useFirebase = () => {
     const [isLoading,setIsLoading]=useState(false);
     const [admin ,setAdmin]=useState(false)
     const auth = getAuth();
-    console.log(admin);
     const googleProvider=new GoogleAuthProvider();
     const registerUser=(email, password,name,history )=>{
       setIsLoading(true)

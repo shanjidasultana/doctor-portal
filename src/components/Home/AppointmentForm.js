@@ -8,7 +8,7 @@ import { Box } from '@mui/system';
 import useAuth from '../../Hooks/useAuth'
 import { useState } from 'react';
 
-const AppointmentForm = ({open,handleCloseModal,time,date,name}) => {
+const AppointmentForm = ({open,handleCloseModal,time,date,name,price}) => {
   const {user}=useAuth();
   const initialInfo={ patientName: user.displayName, email: user.email, phone: '' }
   const [patient,setPatient]=useState(initialInfo)
@@ -25,7 +25,8 @@ const AppointmentForm = ({open,handleCloseModal,time,date,name}) => {
       ...patient,
       time,
       date:date.toLocaleDateString(),
-      serviceName:name
+      serviceName:name,
+      price:price
     }
     fetch('https://fierce-fortress-81249.herokuapp.com/appointments', {
             method: 'POST',
@@ -36,6 +37,7 @@ const AppointmentForm = ({open,handleCloseModal,time,date,name}) => {
         })
         .then(res => res.json())
             .then(data => {
+              console.log(data);
                 if (data.insertedId) {
                   handleCloseModal();
                 }

@@ -5,6 +5,7 @@ import ClientSays from '../../components/ClientSays/ClientSays';
 import Banner from '../../components/Home/Banner/Banner';
 import Contact from '../../components/Home/Contact/Contact';
 import Details from '../../components/Home/Details/Details';
+import Doctors from '../../components/Home/Doctors/Doctors';
 import Header from '../../components/Home/Header/Header';
 import Services from '../../components/Home/Services/Services';
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <AppointmentBanner></AppointmentBanner>
             <ClientSays></ClientSays>
             <Blogs></Blogs>
+            <Doctors></Doctors>
         </div>
     );
 };
